@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"name": "html",
+			"path": "D:/html"
+		},
+		{
+			"name": "html",
+			"path": "../../../ProyectoPrograWeb-main/html"
+		},
+		{
+			"name": "API",
+			"path": "../../../ProyectoPrograWeb-main/API"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "html"
+	}
+}
