@@ -33,7 +33,7 @@ export default function IngresarArriendos() {
     }
 
     try {
-      const token = "TU_TOKEN_AQUI"; // reemplaza si usas JWT
+      const token = "TU_TOKEN_AQUI"; 
 
       await axios.post(
         "http://localhost:3000/api/arriendos",

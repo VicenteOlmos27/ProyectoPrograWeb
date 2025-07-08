@@ -1,17 +1,15 @@
-import { Outlet } from "react-router-dom";
-import NavBar from "../components/NavBar";
+
+import SideBar from "../components/SideBar";
 
 export default function Layout(){
     return(
         <>
         { /*navbar*/}
-      <NavBar/>
+      <SideBar/>
 
-        {/*contenido principal*/}
+        
 
-        <main className="container-fluid">
-            <Outlet/>
-        </main>
+       
         </>
     )
 }
