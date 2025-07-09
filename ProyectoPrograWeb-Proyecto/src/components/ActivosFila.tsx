@@ -8,7 +8,9 @@ type ActivosFilaProps = {
 
 export default function ActivosFila({ index, activo }: ActivosFilaProps) {
   const handleRegistrarDevolucion = async () => {
-    const confirmar = window.confirm("¿Estás seguro de registrar esta devolución?");
+    const confirmar = window.confirm(
+      "¿Estás seguro de registrar esta devolución?"
+    );
     if (!confirmar) return;
 
     try {
@@ -41,11 +43,7 @@ export default function ActivosFila({ index, activo }: ActivosFilaProps) {
         >
           Registrar Devolución
         </button>
-        <button className="btn btn-danger btn-sm">Eliminar</button>
       </td>
     </tr>
   );
 }
-
-
-

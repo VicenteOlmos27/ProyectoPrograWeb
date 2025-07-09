@@ -2,7 +2,7 @@ import { useState } from "react";
 import { safeParse } from "valibot";
 import { CrearUsuarioSchema } from "../types/registrar";
 import axios from "../services/axiosInstance";
-import { Form } from "react-router-dom";
+import { Form, Link } from "react-router-dom";
 
 export async function crearUsuario(datos: { email: string; password: string }) {
   const url = `${import.meta.env.VITE_API_URL}/usuarios/crear`;
@@ -85,6 +85,12 @@ export default function CrearUsuario() {
             </button>
             {mensaje && <div className="alert alert-info mt-3">{mensaje}</div>}
           </Form>
+          <div className="text-center mt-3">
+            <p className="text-muted">¿Ya tienes una cuenta?</p>
+            <Link to="/login" className="btn btn-outline-primary">
+              Volver al Login
+            </Link>
+          </div>
         </div>
       </div>
     </div>

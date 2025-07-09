@@ -17,6 +17,10 @@ export const router = createBrowserRouter([
     action: loginAction,
   },
   {
+    path: "Crear",
+    element: <CrearUsuario />,
+  },
+  {
     path: "/",
     element: <Layout />,
     children: [
@@ -43,10 +47,6 @@ export const router = createBrowserRouter([
           {
             path: "Estadisticas",
             element: <Estadisticas />,
-          },
-          {
-            path: "Crear",
-            element: <CrearUsuario />,
           },
           {
             path: "Terminados",

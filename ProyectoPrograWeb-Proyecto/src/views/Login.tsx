@@ -1,5 +1,6 @@
 import {
   Form,
+  Link,
   redirect,
   useActionData,
   type ActionFunctionArgs,
@@ -87,6 +88,16 @@ export default function Login() {
 
                   <div className="text-center mt-3"></div>
                 </Form>
+
+                <div className="text-center mt-3">
+                  <p className="text-muted">¿No tienes una cuenta?</p>
+                  <Link
+                    to="/Crear"
+                    className="btn btn-outline-secondary rounded-3"
+                  >
+                    Crear Cuenta
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
