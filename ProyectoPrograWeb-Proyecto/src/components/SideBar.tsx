@@ -80,25 +80,10 @@ export default function Sidebar() {
               <i className="bi bi-check2-circle me-2"></i>Arriendos Terminados
             </NavLink>
           </li>
-          <li>
-            <NavLink
-              to="/Crear"
-              className={({ isActive }) =>
-                `nav-link text-start px-3 py-2 rounded ${
-                  isActive ? "bg-primary text-white" : "text-white-50"
-                }`
-              }
-            >
-              <i className="bi bi-person-plus me-2"></i>Crear Usuario
-            </NavLink>
-          </li>
         </ul>
 
         <div className="mt-auto pt-4">
-          <button
-            className="btn btn-danger w-100"
-            onClick={handleLogout}
-          >
+          <button className="btn btn-danger w-100" onClick={handleLogout}>
             <i className="bi bi-box-arrow-right me-2"></i>Cerrar Sesión
           </button>
         </div>
@@ -111,4 +96,3 @@ export default function Sidebar() {
     </div>
   );
 }
-
