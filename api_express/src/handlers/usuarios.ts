@@ -26,8 +26,6 @@ export const login = async (request: Request, response: Response) => {
 };
 
 export const crearUsuario = async (request: Request, response: Response) => {
-  response.json("Crear Usuario");
-
   const { email, password } = request.body;
   if (!email || !password) {
     response.status(400).json({ error: "Email y Contraseña son obligatorios" });

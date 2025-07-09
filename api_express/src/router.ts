@@ -15,6 +15,9 @@ const router = Router();
 //ENPOINT LOGIN
 router.post("/login", login);
 
+//CREAR USUARIO
+router.post("/usuarios/crear", crearUsuario);
+
 //MIDDLEWARE DESDE AQUI
 router.use(verificarTokens);
 
@@ -35,8 +38,5 @@ router.put("/arriendos/:id", registrarDevolucion);
 
 //ENPOINT BORRAR UN ARRIENDO
 router.delete("/arriendos/:id", borrarArriendo);
-
-//CREAR USUARIO
-router.post("/usuarios/crear", crearUsuario);
 
 export default router;
